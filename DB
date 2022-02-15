@@ -1,0 +1,57 @@
+/*
+SQLyog Enterprise - MySQL GUI v6.56
+MySQL - 6.0.11-alpha-community : Database - smartcity
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`smartcity` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `smartcity`;
+
+/*Table structure for table `feature` */
+
+DROP TABLE IF EXISTS `feature`;
+
+CREATE TABLE `feature` (
+  `id` int(100) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `category` varchar(100) DEFAULT NULL,
+  `description` varchar(100) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `contact` varchar(100) DEFAULT NULL,
+  `city` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+
+/*Data for the table `feature` */
+
+insert  into `feature`(`id`,`name`,`category`,`description`,`address`,`contact`,`city`) values (1,'l','business','l','k','kfhjkk','chittoor'),(2,'l','shopping','fgbh','mjvb','567698-0','tirupath'),(3,'l','higher studies',NULL,'gjhhhh','4657','kadapa'),(4,'l','tourism','nulldfgvhn',NULL,'54789','nellore'),(6,'swapna','business','dgfhgjklk,l;','frdrfvtyhhujkoip','78786575654r','hyderabad'),(7,'sowjanya','tourism','dcgcjvvgjh','ftgyhtbhbh','67879809-','bangulore'),(10,'keerthi','higher studies','mnbvbcxx','ljlkjjhgf','8866564','bangulore');
+
+/*Table structure for table `reg` */
+
+DROP TABLE IF EXISTS `reg`;
+
+CREATE TABLE `reg` (
+  `id` int(100) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `pwd` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `num` varchar(100) DEFAULT NULL,
+  `location` varchar(100) DEFAULT NULL,
+  `gender` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+/*Data for the table `reg` */
+
+insert  into `reg`(`id`,`name`,`pwd`,`email`,`num`,`location`,`gender`) values (1,'nandhu','1234','nandhu@gmail.com','4657689','tpt','female'),(2,'keerthi','7890','keerthi@gmail.com','556789','tpt','female'),(3,'neelu','4567','neelu@gmil.com','378980990','puttur','female'),(4,'swapna','7890','swapna@gmail.com','98848655','tirupathi','female');
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
